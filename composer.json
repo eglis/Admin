@@ -8,7 +8,7 @@
     "zf2",
     "shineisp"
   ],
-  "homepage": "http://github.com/shineisp/ShineISPAdmin",
+  "homepage": "http://github.com/shineisp/Admin",
   "authors": [
     {
       "name": "Michelangelo Turillo",
@@ -26,7 +26,7 @@
   },
   "autoload": {
     "psr-0": {
-      "ShineISPAdmin": "src/"
+      "Admin": "src/"
     },
     "classmap": [
       "./Module.php"

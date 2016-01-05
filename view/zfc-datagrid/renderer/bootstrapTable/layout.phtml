@@ -155,9 +155,7 @@ $paginatorOnclick.= 'document.forms[\'form_'.$this->gridId.'\'].submit(); return
 ?>
 <!-- Start Pagination -->
 <div class="row-fluid row">
-    <div class="span4 col-md-4">
-        <?php echo $this->translate('Page').' '.$this->paginator->getCurrentPageNumber().' '.$this->translate('of').' '.$this->paginator->count(); ?>
-    </div>
+    <div class="span4 col-md-4"></div>
     <div class="span4 col-md-4">
         <div class="pagination">
         
@@ -244,7 +242,7 @@ $paginatorOnclick.= 'document.forms[\'form_'.$this->gridId.'\'].submit(); return
         </div>
     </div>
     <div class="span4 col-md-4 text-right">
-        <?php echo $this->translate('Showing').' '.$this->paginator->getCurrentItemCount().' '.$this->translate('of').' '.$this->paginator->getTotalItemCount().' '.$this->translate('items'); ?>
+        <?php echo sprintf($this->translate('Showing %s of %s items'), $this->paginator->getCurrentItemCount(), $this->paginator->getTotalItemCount()); ?>
     </div>
 </div><!-- End Pagination -->
 </form>

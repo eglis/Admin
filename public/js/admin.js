@@ -1,8 +1,79 @@
 
 // ================ WYSIWYG JS Plugin ================ 
 
-$( '.wysiwyg' ).ckeditor( function( textarea ) {
-	this.config.allowedContent = true;
+$('textarea.wysiwyg').ckeditor({
+    uiColor: '#eeeeee',
+    entities: false,
+    allowedContent: true,
+    language: 'en',
+    removeButtons: 'JustifyCenter',
+    toolbarGroups: [
+        {name: 'clipboard', groups: ['clipboard', 'undo']},
+        {name: 'editing', groups: ['find', 'selection', 'spellchecker', 'editing']},
+        {name: 'links', groups: ['links']},
+        {name: 'insert', groups: ['insert']},
+        {name: 'forms', groups: ['forms']},
+        {name: 'tools', groups: ['tools']},
+        {name: 'document', groups: ['mode', 'document', 'doctools']},
+        {name: 'others', groups: ['others']},
+        '/',
+        {name: 'basicstyles', groups: ['basicstyles', 'cleanup']},
+        {name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi', 'paragraph']},
+        {name: 'styles', groups: ['styles']},
+        {name: 'colors', groups: ['colors']},
+        {name: 'about', groups: ['about']}
+    ],
+
+    on: {
+        instanceReady: function (ev) {
+            this.dataProcessor.writer.setRules('caption', {
+                breakAfterOpen: false
+            });
+            this.dataProcessor.writer.setRules('div', {
+                breakAfterOpen: false,
+                indent: true,
+            });
+            this.dataProcessor.writer.setRules('p', {
+                indent: false,
+                breakAfterOpen: false,
+                breakAfterClose: false
+            });
+            this.dataProcessor.writer.setRules('br', {
+                breakAfterOpen: true
+            });
+            this.dataProcessor.writer.setRules('li', {
+                breakAfterOpen: false
+            });
+            this.dataProcessor.writer.setRules('h1', {
+                breakAfterOpen: false,
+                breakAfterClose: true
+            });
+            this.dataProcessor.writer.setRules('h2', {
+                breakAfterOpen: false,
+                breakAfterClose: true
+            });
+            this.dataProcessor.writer.setRules('h3', {
+                breakAfterOpen: false,
+                breakAfterClose: true
+            });
+            this.dataProcessor.writer.setRules('h4', {
+                breakAfterOpen: false,
+                breakAfterClose: true
+            });
+            this.dataProcessor.writer.setRules('h5', {
+                breakAfterOpen: false,
+                breakAfterClose: true
+            });
+            this.dataProcessor.writer.setRules('h6', {
+                breakAfterOpen: false,
+                breakAfterClose: true
+            });
+            this.dataProcessor.writer.setRules('td', {
+                breakAfterOpen: false,
+                breakAfterClose: true
+            });
+        }
+    }
 });
 
 // ================ Date picker ================ 

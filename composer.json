@@ -17,10 +17,7 @@
     }
   ],
   "require": {
-    "php": ">=5.4",
-    "shineisp/shineisp-core": "dev-master"
-  },
-  "require-dev": {
+    "php": ">=5.4"
   },
   "autoload": {
     "psr-0": {

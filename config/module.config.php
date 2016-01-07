@@ -11,25 +11,24 @@ return array (
         'asset_manager' => array(
                 'resolver_configs' => array(
                         'collections' => array(
-                                'js/administration.js' => array(
-                                        'commons/js/jquery-1.11.1.js',
-                                        'commons/js/jquery-ui.min.js',
-                                        'commons/js/bootstrap.min.js',
-                                        'commons/js/bootstrap-hogan-2.0.0.js',
-                                        'commons/js/bootstrap-typeahead.min.js',
-                                        'js/ckeditor.path.js',
-                                        'commons/ckeditor/ckeditor.js',
-                                        'commons/ckeditor/adapters/jquery.js',
-                                        'commons/js/jquery.datetimepicker.js',
-                                        'js/admin.js',
-                                ),
-                                'css/administration.css' => array(
-                                        'commons/css/bootstrap.min.css',
-                                        'commons/css/bootstrap-typeahead.css',
-                                        'commons/css/font-awesome.min.css',
-                                        'commons/css/jquery.datetimepicker.css',
-                                        'css/admin.css',
-                                ),
+								'js/administration.js' => array(
+										'commons/js/jquery-1.11.1.js',
+										'commons/js/bootstrap.min.js',
+										'commons/js/bootstrap-hogan-2.0.0.js',
+										'commons/js/bootstrap-typeahead.min.js',
+										'js/ckeditor.path.js',
+										'commons/ckeditor/ckeditor.js',
+										'commons/ckeditor/adapters/jquery.js',
+										'commons/js/jquery.datetimepicker.js',
+										'js/admin.js',
+								),
+								'css/administration.css' => array(
+										'commons/css/bootstrap.min.css',
+										'commons/css/bootstrap-typeahead.css',
+										'commons/css/font-awesome.min.css',
+										'commons/css/jquery.datetimepicker.css',
+										'css/admin.css',
+								),
                         ),
                         'paths' => array(
                                 __DIR__ . '/../public',

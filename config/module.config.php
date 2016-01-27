@@ -20,6 +20,7 @@ return array (
 										'commons/ckeditor/ckeditor.js',
 										'commons/ckeditor/adapters/jquery.js',
 										'commons/js/jquery.datetimepicker.js',
+										'js/jquery.jqGrid.min.js',
 										'js/admin.js',
 								),
 								'css/administration.css' => array(
@@ -27,6 +28,7 @@ return array (
 										'commons/css/bootstrap-typeahead.css',
 										'commons/css/font-awesome.min.css',
 										'commons/css/jquery.datetimepicker.css',
+										'css/ui.jqgrid.css',
 										'css/admin.css',
 								),
                         ),
@@ -72,10 +74,10 @@ return array (
                         'admin/index/index' => __DIR__ . '/../view/admin/index/index.phtml', 
                         'error/404' => __DIR__ . '/../view/error/404.phtml', 
                         'error/index' => __DIR__ . '/../view/error/index.phtml',
-                        'zfc-datagrid/renderer/bootstrapTable/layout' => __DIR__ . '/../view/zfc-datagrid/renderer/bootstrapTable/layout.phtml',
-                ), 
+                ),
                 'template_path_stack' => array ( 
                         __DIR__ . '/../view'
                 )
-        ), 
+        ),
+
 );

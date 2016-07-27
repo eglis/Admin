@@ -1,19 +1,19 @@
 {
   "name": "shinesoftware-zf-modules/admin",
-  "description": "Admin module for ShineISP project",
+  "description": "Admin module written for Zend Framework project",
   "license": "BSD-2-Clause",
   "type": "library",
   "minimum-stability": "dev",
   "keywords": [
     "zf2",
-    "shineisp"
+    "Administration module"
   ],
   "homepage": "http://github.com/shinesoftware-zf-modules/Admin",
   "authors": [
     {
       "name": "Michelangelo Turillo",
-      "email": "info@shineisp.com",
-      "homepage": "http://shineisp.com"
+      "email": "info@shinesoftware.com",
+      "homepage": "http://shinesoftware.com"
     }
   ],
   "require": {

@@ -33,7 +33,7 @@ return array (
                         ),
                         'paths' => array(
                                 __DIR__ . '/../public',
-                                PUBLIC_PATH,
+                                getcwd(),
                         ),
                 ),
         ),

@@ -17,12 +17,24 @@
       "homepage": "http://shinesoftware.com"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/shinesoftware-zf-modules/Base"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/shinesoftware-zf-modules/Main"
+    }
+  ],
   "require": {
     "php": ">=5.4",
     "zf-commons/zfc-user": "1.4.*",
     "zf-commons/zfc-admin": "0.1.*",
     "rwoverdijk/assetmanager": "*",
-    "bjyoungblood/bjy-authorize": "1.5.0-beta1"
+    "bjyoungblood/bjy-authorize": "1.5.0-beta1",
+    "shinesoftware-zf-modules/base": "dev-master",
+    "shinesoftware-zf-modules/main": "dev-master"
   },
   "autoload": {
     "psr-0": {

@@ -69,6 +69,8 @@ To get the application running, perform the following steps:
   
 5. Import the data/data.sql dump into you MySQL database
 
-6. Now open your preferite browser and type: http://www.myproject.com/.
+6. Enable the module in the config/application.config.php 
 
-7. Hooray! You will see the standard Zend Framework page! Now you can see the module in action! How simple was that??
+7. Now open your preferite browser and type: http://www.myproject.com/.
+
+8. Hooray! You will see the standard Zend Framework page! Now you can see the module in action! How simple was that??

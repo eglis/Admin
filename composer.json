@@ -6,7 +6,8 @@
   "minimum-stability": "dev",
   "keywords": [
     "zf2",
-    "Administration module"
+    "administration",
+    "control panel"
   ],
   "homepage": "http://github.com/shinesoftware-zf-modules/Admin",
   "authors": [
@@ -17,7 +18,11 @@
     }
   ],
   "require": {
-    "php": ">=5.4"
+    "php": ">=5.4",
+    "zf-commons/zfc-user": "1.4.*",
+    "zf-commons/zfc-admin": "0.1.*",
+    "rwoverdijk/assetmanager": "*",
+    "bjyoungblood/bjy-authorize": "1.5.0-beta1"
   },
   "autoload": {
     "psr-0": {

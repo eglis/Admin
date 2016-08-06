@@ -65,6 +65,25 @@ To get the application running, perform the following steps:
   cd YOUR-INSTALLATION-PATH
   composer update
   ```
+4. In the /config/application.config.php you have to enable these default modules:
+
+
+    'AssetManager',
+    'ScnSocialAuth',
+    'ZfcBase',
+    'ZfcUser',
+    'GoalioMailService',
+    'GoalioForgotPassword',
+    'ZfcDatagrid',
+    'ZfcAdmin',
+    'BjyAuthorize',
+    'GoogleMaps',
+    
+    // Shine Software module
+    'Base',   
+    'Main'    
+    'Admin'   
+    
 4. Set the pdo.local.php with the mysql account  
   
 5. Import the data/data.sql dump into you MySQL database

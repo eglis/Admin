@@ -47,16 +47,6 @@ return array(
         ),
     ),
     'navigation' => array(
-        'default' => array(
-            'admin' => array(
-                'label' => _('Admin'),
-                'route' => 'zfcadmin',
-                'resource' => 'adminmenu',  // look at the bjyauthorize.global.php config file
-                'privilege' => 'list',
-                'icon' => 'fa fa-cog',
-                'order' => '1000',
-            ),
-        ),
         'admin' => array(
             'home' => array(
                 'label' => _('Dashboard'),
@@ -64,7 +54,13 @@ return array(
                 'icon' => 'fa fa-home',
                 'resource' => 'adminmenu',  // look at the bjyauthorize.global.php config file
                 'privilege' => 'list',
-            ),
+                'pages' => array(
+                    array(
+                        'label' => _('Public site'),
+                        'route' => 'home',
+                        'icon' => 'fa fa-globe'
+                    ),
+                ),),
         ),
     ),
     'service_manager' => array(
@@ -87,7 +83,7 @@ return array(
     ),
     'view_manager' => array(
         'template_map' => array(
-            'layout/layout' => __DIR__ . '/../view/layout/backend.phtml',
+            'layout/backend' => __DIR__ . '/../view/layout/backend.phtml',
             'admin/index/index' => __DIR__ . '/../view/admin/index/index.phtml',
             'error/404' => __DIR__ . '/../view/error/404.phtml',
             'error/index' => __DIR__ . '/../view/error/index.phtml',

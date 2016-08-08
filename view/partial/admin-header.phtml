@@ -7,12 +7,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><?php echo $this->settings('name') ?></a>
+                <a class="navbar-brand" href="<?php echo $this->url('zfcadmin') ?>"><?php echo $this->settings('name') ?> Admin</a>
             </div>
             <div class="collapse navbar-collapse">
                 <?php echo $this->navigation('admin_navigation')
                         ->menu()
                         ->setPartial('partial/menu.phtml')
+                        ->setMaxDepth(0)
+                        ->setRenderInvisible(false)
                         ->setUlClass('nav navbar-nav navbar-nav-left')
                         ->render();
                  ?>

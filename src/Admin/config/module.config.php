@@ -44,18 +44,6 @@ return array (
                 			array('route' => 'zfcadmin', 'roles' => array('admin')),
 						),
 				),
-		),	
-		'navigation' => array(
-				'default' => array(
-						 'admin' => array(
-        		                'label' => _('Admin'),
-        		                'route' => 'zfcadmin',
-        		                'resource' => 'adminmenu',  // look at the bjyauthorize.global.php config file
-        		                'privilege' => 'list', 
-        		                'icon' => 'fa fa-cog',
-        		                'order' => '1000', 
-        		        ),
-				),
 		),
 		'zfcadmin' => array(
 				'admin_layout_template' => 'layout/backend'

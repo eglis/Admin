@@ -61,7 +61,9 @@ return array(
             'home' => array(
                 'label' => _('Dashboard'),
                 'route' => 'zfcadmin',
-                'icon' => 'fa fa-home'
+                'icon' => 'fa fa-home',
+                'resource' => 'adminmenu',  // look at the bjyauthorize.global.php config file
+                'privilege' => 'list',
             ),
         ),
     ),

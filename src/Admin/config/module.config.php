@@ -56,13 +56,6 @@ return array (
         		                'order' => '1000', 
         		        ),
 				),
-				'admin' => array(
-						'home' => array(
-								'label' => _('Dashboard'),
-								'route' => 'zfcadmin',
-								'icon' => 'fa fa-home'
-						),
-				),
 		),
 		'zfcadmin' => array(
 				'admin_layout_template' => 'layout/backend'

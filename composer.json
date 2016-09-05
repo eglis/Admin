@@ -1,5 +1,5 @@
 {
-  "name": "shinesoftware-zf-modules/admin",
+  "name": "shinesoftware/admin",
   "description": "Admin module written for Zend Framework project",
   "license": "BSD-2-Clause",
   "type": "library",
@@ -9,7 +9,7 @@
     "administration",
     "control panel"
   ],
-  "homepage": "http://github.com/shinesoftware-zf-modules/Admin",
+  "homepage": "https://shinedev@bitbucket.org/shinesoftware/admin.git",
   "authors": [
     {
       "name": "Michelangelo Turillo",
@@ -20,7 +20,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/shinesoftware-zf-modules/Base"
+      "url": "https://shinedev@bitbucket.org/shinesoftware/base.git"
     }
   ],
   "require": {
@@ -29,7 +29,7 @@
     "zf-commons/zfc-admin": "0.1.*",
     "rwoverdijk/assetmanager": "*",
     "bjyoungblood/bjy-authorize": "1.5.0-beta1",
-    "shinesoftware-zf-modules/base": "dev-master"
+    "shinesoftware/base": "dev-master"
   },
   "autoload": {
     "psr-0": {

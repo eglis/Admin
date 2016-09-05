@@ -81,6 +81,14 @@ return array(
     'zfcadmin' => array(
         'admin_layout_template' => 'layout/backend'
     ),
+
+    'view_helpers' => array(
+
+        'factories' => array(
+            'languages' => 'Admin\Factory\LanguagesHelperFactory',
+            'user' => 'Admin\Factory\UsersHelperFactory',
+        )
+    ),
     'view_manager' => array(
         'template_map' => array(
             'layout/backend' => __DIR__ . '/../view/layout/backend.phtml',

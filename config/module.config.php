@@ -86,7 +86,6 @@ return array(
 
         'factories' => array(
             'languages' => 'Admin\Factory\LanguagesHelperFactory',
-            'user' => 'Admin\Factory\UsersHelperFactory',
         )
     ),
     'view_manager' => array(

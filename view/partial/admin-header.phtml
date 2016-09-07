@@ -20,7 +20,7 @@
                  ?>
                  <ul class="nav navbar-nav navbar-right">
                  <?php if($this->zfcUserIdentity()): ?>
-                     	<?php $user = $this->user($this->zfcUserIdentity()->getId()); ?>
+                     	<?php $user = $this->userinfo($this->zfcUserIdentity()->getId()); ?>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> <?php echo $this->zfcUserIdentity()->getDisplayName() ?> <b class="caret"></b></a>
                             <ul class="dropdown-menu">

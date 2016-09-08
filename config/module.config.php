@@ -74,9 +74,6 @@ return array(
         'invokables' => array(
             'Zend\Session\SessionManager' => 'Zend\Session\SessionManager',
         ),
-        'factories' => array(
-            'goalioforgotpassword_forgot_form' => 'Admin\Factory\ForgotFactory',
-        ),
     ),
     'zfcadmin' => array(
         'admin_layout_template' => 'layout/backend'
@@ -92,8 +89,6 @@ return array(
         'template_map' => array(
             'layout/backend' => __DIR__ . '/../view/layout/backend.phtml',
             'admin/index/index' => __DIR__ . '/../view/admin/index/index.phtml',
-            'error/404' => __DIR__ . '/../view/error/404.phtml',
-            'error/index' => __DIR__ . '/../view/error/index.phtml',
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view'

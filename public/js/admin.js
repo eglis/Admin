@@ -1,4 +1,7 @@
 
+/* http://www.bootstrap-switch.org/ */
+$("[type=checkbox]").bootstrapSwitch();
+
 // ================ WYSIWYG JS Plugin ================ 
 
 $('textarea.wysiwyg').ckeditor({

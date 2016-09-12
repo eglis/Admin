@@ -21,6 +21,7 @@ return array(
                     'commons/ckeditor/adapters/jquery.js',
                     'commons/js/jquery.datetimepicker.js',
                     'js/jquery.jqGrid.min.js',
+                    'commons/js/bootstrap-switch.min.js',
                     'js/admin.js',
                 ),
                 'css/administration.css' => array(
@@ -28,6 +29,7 @@ return array(
                     'commons/css/bootstrap-typeahead.css',
                     'commons/css/font-awesome.min.css',
                     'commons/css/jquery.datetimepicker.css',
+                    'commons/css/bootstrap-switch.css',
                     'css/ui.jqgrid.css',
                     'css/admin.css',
                 ),

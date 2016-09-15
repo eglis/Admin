@@ -2,7 +2,6 @@
 A simple admin module. This module helps to handle all other modules like:
 
 - CMS
-- Pd
 
 ## Prerequisites
 You will need:
@@ -55,7 +54,7 @@ To get the application running, perform the following steps:
     [
         {
             "type": "vcs",
-            "url": "https://github.com/shinesoftware-zf-modules/Admin"
+            "url": "https://github.com/shineisp/Admin.git"
         }
     ],
 ```

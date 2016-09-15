@@ -9,7 +9,7 @@
     "administration",
     "control panel"
   ],
-  "homepage": "https://shinedev@bitbucket.org/shinesoftware/admin.git",
+  "homepage": "https://github.com/shineisp/Admin.git",
   "authors": [
     {
       "name": "Michelangelo Turillo",
@@ -20,7 +20,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://shinedev@bitbucket.org/shinesoftware/base.git"
+      "url": "https://github.com/shineisp/Base.git"
     }
   ],
   "require": {
